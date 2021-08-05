@@ -3,13 +3,14 @@ package tdd.fizzbuzz;
 public class FizzBuzz {
 
     public static final String FIZZ = "Fizz";
+    public static final String BUZZ = "Buzz";
 
     public String countOff(int orderNumber) {
 
         if (orderNumber % 3 == 0) {
             return FIZZ;
         } else if (orderNumber % 5 == 0) {
-            return "Buzz";
+            return BUZZ;
         }
 
         return String.valueOf(orderNumber);
